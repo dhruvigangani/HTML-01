@@ -1,0 +1,224 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+
+main {
+    margin: 0;
+}
+
+main .about-company {
+    background-image: url('Image-8.jpeg');
+    background-size: cover;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column;
+    height: 91vh;
+}
+
+main .contact-form {
+
+    background-image: url('Image-6.jpeg');
+    background-size: contain;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 91vh;
+    
+}
+
+.contact-form h1 {
+    padding: 10px 20px;
+    background-color: #79130e;
+    color: #ffffff;
+    text-align: center;
+    padding-left: -30px ;
+    box-shadow: 0 0 40px #a98f70;
+
+}
+
+.contact-form form {
+    color: #ffffff;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color:#a98f70;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.contact-form button:hover {
+    background-color: #aa2e2e;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 91vh; /* Full viewport height */
+    background: url('Image-1.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1;
+}
+
+.view-products-button {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #79130e;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    z-index: 2; /* Ensure button is on top of overlay */
+    bottom: -200px; /* Move button 20px up */
+    left: 20px; /* Move button 20px to the right */
+    transform: translate(-50%, -50%); /* Center button horizontally and vertically */
+    box-shadow: 0 0 40px #a98f70;
+}
+
+.view-products-button:hover {
+    background-color: #9d815f;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0 0 0;
+}
+
+/* Product Page */
+.product-grid {
+
+    position: relative;
+    background-image: url('Image-3.jpeg');
+    background-size:contain;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    height : 91vh;
+    justify-content: center;
+}
+
+.product-item {
+    background: #201f1f;
+    color: white;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    box-shadow: 0 0 20px rgb(169, 134, 89);
+}
+
+.product-item img {
+    width: 100%;
+    height: 50%;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #b03d3d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.product-item button:hover {
+    background-color: #a97c4a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
