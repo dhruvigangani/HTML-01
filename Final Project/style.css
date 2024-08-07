@@ -1,0 +1,313 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+main {
+    margin: 0;
+}
+
+main .about-company {
+    background-image: url('Images/Image-4.jpeg');
+    background-size: cover;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+    flex-direction: column;
+    height: 91vh;
+}
+
+main .contact-form {
+
+    background-image: url('Images/Image-3.jpeg');
+    background-size: contain;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 91vh;
+    
+}
+
+.contact-form h1 {
+    padding: 10px 20px;
+    background-color: #79130e;
+    color: #ffffff;
+    text-align: center;
+    padding-left: -30px ;
+    box-shadow: 0 0 40px #a98f70;
+
+}
+
+.contact-form form {
+    color: #ffffff;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color:#a98f70;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    align-self: center;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for color and transform */
+
+}
+
+.contact-form button:hover {
+    background-color: #aa2e2e;
+    color: black;
+    transform: scale(1.05); /* Slightly scale up on hover */
+    
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 91vh; /* Full viewport height */
+    background: url('Images/Image-1.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1;
+}
+
+.view-products-button {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #79130e;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    z-index: 2;
+    bottom: -200px;
+    left: 20px;
+    box-shadow: 0 0 40px #a98f70;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.view-products-button:hover {
+    background-color: #9d815f;
+    color: black;
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+footer nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    
+}
+
+footer nav ul li {
+    display: inline;
+    justify-content: center;
+    border-left: 1px solid white;
+    padding: 10px;
+}
+
+footer nav ul li a {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s; /* Add transition for color and transform */
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(153, 101, 101);
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+footer p {
+    margin: 10px 0 0 0;
+}
+
+/* Product Page */
+.product-grid {
+
+    position: relative;
+    background-image: url('Images/Image-2.jpeg');
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    height : 91vh;
+    justify-content: center;
+    
+}
+
+.product-grid a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.product-item {
+
+    background: #201f1f;
+    color: white;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(169, 134, 89);
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for color and transform */
+}
+
+.product-item:hover {
+
+    background-color: #bba27f;
+    color: black;
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.product-item img {
+    border-radius: 4px;
+    width: 100%;
+    height: 50%;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #b03d3d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.product-item button:hover {
+    background-color: #a97c4a;
+}
+
+/* Product Details */
+.product-details-grid {
+    position: relative;
+    background-image: url('Images/Image-2.jpeg');
+    background-size: contain;
+    display: flex;
+    gap: 40px;
+    height : 91vh;
+    justify-content: center;
+    
+}
+
+.product-details-info {
+    background: #201f1f;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgb(169, 134, 89);
+}
+
+.product-details-info h3 {
+    margin-bottom: 10px;
+}
+
+.product-details-info p {
+    margin-bottom: 10px;
+}
+
+.product-details-info button {
+    background-color: #b03d3d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    align-self: start;
+}
+
+.product-details-info button:hover {
+    background-color: #a97c4a;
+}
+
+.product-details-image {
+    display: flex;
+    justify-content: center;
+    border: 5px solid #a98f70; /* Add border */
+    border-radius: 10px; /* Optional: rounded corners */
+    overflow: hidden; /* Ensure border does not overflow */
+    transition: border 0.3s, box-shadow 0.3s; /* Add transition for border and shadow */
+}
+
+.product-details-image:hover {
+    border: 10px solid #b03d3d; /* Change border color on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add shadow effect on hover */
+}
+
+.product-details-image img {
+    border-radius: 10px;
+    width: 450px;
+    margin-top: 20%;
+    height: 450px;
+}
+
