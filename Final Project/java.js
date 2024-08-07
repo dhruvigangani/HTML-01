@@ -1,12 +1,21 @@
-// Add your JavaScript functionality here
+//javascript
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Example function to handle cart additions
     const buttons = document.querySelectorAll("button");
-    
+
     buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            alert("Added to cart!");
+        button.addEventListener("click", (event) => {
+            //if its submit
+            if(event.target.textContent.trim() == "Submit") {
+                alert("Form Submitted");
+            }
+            //if its adding to cart
+            else if(event.target.textContent.trim() == "Add to Cart"){
+                alert("Added to Cart!");
+            }
+            else{
+                //do nothing
+            }
         });
     });
 });
